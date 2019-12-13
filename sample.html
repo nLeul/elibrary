@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="button" value="Toggle DisplayText">
+    <span>Hello Toggle</span>
+    <script>
+        function FindIntersection(arr) {
+            const firstArrayElem = arr[0].split(" ");
+            const output = [];
+            firstArrayElem.forEach(element => {
+                if (arr[1].includes(element)) {
+                    output.push(element);
+                }
+            });
+            if (output.length === 0) {
+                return true;
+            }
+            return output.join("");
+        }
+        console.log(FindIntersection(["1, 3, 4, 7, 15", "1, 2, 4, 15, 21"]))
+        console.log(FindIntersection(["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"]))
+    </script>
+
+</body>
+
+</html>
